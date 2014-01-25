@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_switch"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_switch_traffic"/>
+    
+    <item
+        android:id="@+id/action_sat_nz_infrared"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/action_sat_nz_infrared"/>
+    
+    <item
+        android:id="@+id/action_sat_nz_visible"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/action_sat_nz_visible"/>
+    
+    <item
+        android:id="@+id/action_sat_aus_infrared"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="@string/action_sat_aus_infrared"/>
+    
+    <item
+        android:id="@+id/action_other_weather"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/action_other_weather"/>
+
+</menu>

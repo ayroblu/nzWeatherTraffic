@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_switch"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_switch_traffic"/>
+    
+    <item
+        android:id="@+id/action_surf_tasman"
+        android:orderInCategory="1"
+        android:showAsAction="never"
+        android:title="@string/action_surf_tasman"/>
+    
+    <item
+        android:id="@+id/action_surf_pacific"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/action_surf_pacific"/>
+    
+    <item
+        android:id="@+id/action_other_weather"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="@string/action_other_weather"/>
+
+</menu>

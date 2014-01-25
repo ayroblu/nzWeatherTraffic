@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_header_defaults" >
+        <CheckBoxPreference android:key="lines_checkbox" 
+            android:title="@string/pref_title_weather_or_traffic"
+            android:defaultValue="true"
+            android:summary="@string/pref_summary_lines"/>
+        
+    </PreferenceCategory>
+        
+</PreferenceScreen>

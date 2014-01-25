@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <string name="pref_header_defaults">Defaults</string>
+
+    <string name="pref_title_weather_or_traffic">Weather as default</string>
+    <string name="pref_summary_lines">Show the weather on startup, else traffic</string>
+    
+    
+</resources>

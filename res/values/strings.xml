@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NZ Weather and Traffic</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_switch_traffic">Traffic</string>
+    <string name="action_switch_weather">Weather</string>
+    
+    <string name="action_auckland">Auckland</string>
+    <string name="action_nz_cities">NZ Cities</string>
+    
+    <string name="action_northern">SH1 Northern motorway</string>
+    <string name="action_southern">SH1 Southern motorway</string>
+    <string name="action_north_western">SH16 North Western motorway</string>
+    <string name="action_upper_harbour">SH18 Upper Harbour motorway</string>
+    
+    <string name="action_3day">3 Day Forecast</string>
+    <string name="action_5day">5 Day Forecast</string>
+    <string name="action_rr_hour">Last hour</string>
+    <string name="action_rr_8hours">Last 8 hours</string>
+    <string name="action_surf_tasman">Tasman Sea</string>
+    <string name="action_surf_pacific">Southwest Pacific</string>
+    <string name="action_sat_nz_infrared">Tasman Sea Infrared</string>
+    <string name="action_sat_nz_visible">Tasman Sea Visible</string>
+    <string name="action_sat_aus_infrared">Australia Infrared</string>
+    
+    <string name="action_other_weather">Other Weather</string>
+    
+    <string name="action_refresh">Refresh</string>
+
+</resources>
