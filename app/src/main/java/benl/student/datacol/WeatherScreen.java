@@ -111,9 +111,9 @@ public class WeatherScreen extends FragmentActivity {
 	public static final String FIVE_DAY = "5day";
 	public static final String PREFS = "weather";
 	public static final String PREFS_TYPE = "weatherType";
-	private static final String METSERVICE_API_URL = "http://www.metservice.com/publicData/";
+	private static final String METSERVICE_API_URL = "https://www.metservice.com/publicData/";
 	
-	private ArrayList<Fragment> fragments;
+	private ArrayList<Fragment> fragments = new ArrayList<Fragment>();
 	private ArrayList<String> pageNames;
 	
 	private int mode;
@@ -257,6 +257,8 @@ public class WeatherScreen extends FragmentActivity {
 
 		fragments = new ArrayList<Fragment>();
 		pageNames = new ArrayList<String>();
+
+        mSectionsPagerAdapter.notifyDataSetChanged();
 		
 		new DownloadWebPage().execute(METSERVICE_API_URL + URL_MAP.get(type));
 	}
@@ -438,7 +440,7 @@ public class WeatherScreen extends FragmentActivity {
                 	response.add(forecast);
                 }
             } catch (Exception e) {
-                Log.e(TAG, "DownloadedWebPage");
+                Log.e(TAG, "DownloadedWebPage" + urldisplay);
                 e.printStackTrace();
             }
             return response;
@@ -456,11 +458,11 @@ public class WeatherScreen extends FragmentActivity {
 			}
         	for (Forecast s : result) {
         		pageNames.add(s.shortDateTime);
-        		addFragment("http://www.metservice.com"+s.url);
+        		addFragment("https://www.metservice.com"+s.url);
         	}
 
-    		mViewPager.setOffscreenPageLimit(5);
         	mSectionsPagerAdapter.notifyDataSetChanged();
+    		mViewPager.setOffscreenPageLimit(5);
         }
         
         private String openWebsite(String url) throws MalformedURLException, IOException {
