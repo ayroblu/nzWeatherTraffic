@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 27
     buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "benl.student.datacol"
         minSdkVersion 8
-        targetSdkVersion 19
+        targetSdkVersion 27
     }
 
     buildTypes {
